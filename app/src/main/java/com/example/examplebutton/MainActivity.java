@@ -5,12 +5,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
     public void click(View view){
 
-        Log.i("Info","Done!!");
+        EditText editTextName=findViewById(R.id.editTextName);
+        EditText editTextPwd=findViewById(R.id.editTextPwd);
+        Log.i("Name",editTextName.getText().toString());
+        Log.i("Password",editTextPwd.getText().toString());
+
+
+        Log.i("Info","success!!");
     }
 
     @Override
