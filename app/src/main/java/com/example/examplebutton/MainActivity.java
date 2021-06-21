@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Log.i("Info","success!!");
+        Toast.makeText(this,"HELLO "+ editTextName.getText().toString(),Toast.LENGTH_LONG).show();
     }
 
     @Override
